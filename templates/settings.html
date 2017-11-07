@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="jumbotron">
+  <h1>My HUD</h1> 
+</div>
+
+<div class="form">
+  <form action="/Settings" method="post">
+    {{ get_parameters() }}
+    <label><input type="submit" class="button" value="Save"/></label> 
+  </form> 
+</div>
+
+{% endblock %}
