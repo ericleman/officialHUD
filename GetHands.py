@@ -3,8 +3,6 @@ from DB import DB
 import os
 from datetime import datetime
 
-## TO DO: get hands_dir from DB
-HANDS_DIRS=["/home/eric/Documents/Winamax Poker/accounts/CookandPoker/history/"]
 db=DB()
 
 def getHands():
