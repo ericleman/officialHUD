@@ -1,5 +1,5 @@
 import sqlite3
-import os
+import os, sys
 
 DB_PATH=os.getcwd()+'/HUD.db'
 
@@ -33,5 +33,11 @@ class DB():
     return tmp
 
 if __name__== "__main__":
+  reCreate=False
+  for arg in sys.argv[1:]:
+    if arg == "new":
+      reCreate=True
   db=DB()
+  if reCreate:
+    db.createDB()
 
