@@ -15,3 +15,6 @@ INSERT INTO settings (parameter,display) values ("username_winamax","Winamax Use
         ("username_pokerstars","Pokerstars Username"),
         ("hands_winamax","Winamax Hands Folder"),
         ("hands_pokerstars","Pokerstars Hands Folder");
+
+insert into handsfiles (filename, room, modified) values ('abc', 'Winamax', '2017-11-11 12:12:12.000'),
+  ('xyz', 'Winamax', '2017-11-11 12:12:12.000'); 
